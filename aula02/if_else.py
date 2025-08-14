@@ -31,3 +31,4 @@ peso = input('digite seu peso: ').replace(',','.')
 peso = float(peso)
 print(peso)
 print(f'{peso:.2f}')
+

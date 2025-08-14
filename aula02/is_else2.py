@@ -58,3 +58,4 @@ idade = 39
 
 #operador ternario 
 print(nome, 'e maior de idade.' if idade >= 18 else ' e menor de idade')
+#NOTE - impórtante para mobile para code one line 
