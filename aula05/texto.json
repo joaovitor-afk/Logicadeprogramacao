@@ -1,0 +1,21 @@
+{
+"0" : {
+
+    "nome" : "gomes",
+    "idade" : 26,
+    "profissao" : ["garoto de programa", "professor", "suporte"]
+
+    },
+"1" : {
+
+    "nome" : "clovis",
+    "idade" : 24,
+    "profissao" : {
+        "profissao" : "motorista",
+        "habilidade" : ["tecnica", "emocional"]
+
+
+    }
+
+    }   
+}
