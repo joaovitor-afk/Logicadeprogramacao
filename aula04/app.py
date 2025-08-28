@@ -5,10 +5,10 @@
 
 #importando biblioteca
 
-import os 
+'''import os 
 from time import sleep
 
-'''cont = input('Digite um numero inteiro: ')
+cont = input('Digite um numero inteiro: ')
 
 try:
     cont_int = int(cont)
@@ -131,7 +131,7 @@ if num1 == num_cecret:
 else:
     print('voce perdeu!')
     print(f'o numero escolhido era {num_cecret}') 
-    '''
+    
 
 # v2
 
@@ -182,4 +182,4 @@ while tentativas < max_tentativas:
 if acertou:
     print(f'voce acertou o numero {num_secret} em {tentativas} tentativas')
 else:
-    print(f'errou bobao era {num_secret}')
+    print(f'errou bobao era {num_secret}')'''

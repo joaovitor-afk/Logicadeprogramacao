@@ -259,7 +259,8 @@ while True:
         print("Opcao invalida!")'''
 #NOTE - fim do programa 
 
-nome = 'sybal'
+'''nome = 'sybal'
 
 for i in nome: 
-    print(i)
+    print(i)'''
+

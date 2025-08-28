@@ -26,9 +26,11 @@ while True:
             case 's':
                 continue
             case 'n':
-                print('bobao')
                 break
 
     except Exception as e:
         print(f'nao foi possivel ler o arquivo. {e}')
         continue
+
+
+
