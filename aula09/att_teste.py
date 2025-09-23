@@ -43,23 +43,33 @@ while True:
                 else:
                        print('nenhum livro encontrado na biblioteca!')
            case '3':
-                nome = input('Informe o nome do livro que deseja atualizar: ').strip().lower()
-                with open("aula09/livros.json", 'r', encoding='utf-8') as f:
-                    cadastro = json.load(f)
-                print('Dados atuais:', cadastro)
-                idade_indicativa = input('Nova idade idade indicativa (permaneça em branco para nao fazer alteraçoes): ').strip()
-                genero = input('Novo genero (permaneça em branco para nao fazer alteraçoes): ').strip()
-                if genero:
-                    cadastro['genero'] = ['genero']
-                if idade_indicativa:
-                    cadastro['idade_indicativa'] = ['idade_indicativa']
-                    with open('aula09/livros.json', 'w', encoding='utf-8') as f:
-                        json.dump(cadastro, f, ensure_ascii=False, indent=4)
-                    limpar()
-                    print('Livro atualizado com sucesso!')
-
-                else:
-                    print('Livro não encontrado!')
+                 nome = input('Informe o nome do livro que deseja atualizar: ').strip().lower()
+                 with open("aula09/livros.json", 'r', encoding='utf-8') as f:
+                     cadastro = json.load(f)
+                
+                 encontrado = False
+                 for livro in cadastro: 
+                     if livro['nome'].lower() == nome:
+                         print('Dados atuais:', livro)
+                         
+                         idade_indicativa = input('Nova idade indicativa (permaneça em branco para não alterar): ').strip()
+                         genero = input('Novo gênero (permaneça em branco para não alterar): ').strip()
+                
+                         if idade_indicativa:
+                             livro['idade_indicativa'] = idade_indicativa
+                         if genero:
+                             livro['genero'] = genero
+                
+                         encontrado = True
+                         break
+                        
+                 if encontrado:
+                     with open('aula09/livros.json', 'w', encoding='utf-8') as f:
+                         json.dump(cadastro, f, ensure_ascii=False, indent=4)
+                     limpar()
+                     print('Livro atualizado com sucesso!')
+                 else:
+                     print('Livro não encontrado!')
 
            case '4':
                 print(f"nome: {livro_novo["nome"]}")
