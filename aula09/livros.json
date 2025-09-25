@@ -1,11 +1,5 @@
 {
-    "nome": [
-        "Pequeno Principe"
-    ],
-    "idade_indicativa": [
-        "12"
-    ],
-    "genero": [
-        "açao"
-    ]
+    "nome": [],
+    "idade_indicativa": [],
+    "genero": []
 }
