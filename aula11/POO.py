@@ -1,5 +1,4 @@
 import json
-
  
 with open("Aula11/bibli.json", "r", encoding="utf-8") as f:
     livro_novo = dict(json.load(f))
@@ -85,8 +84,6 @@ class Livros:
         
         print("Livro não encontrado")
 
-
-
 def menu():
     livro = Livros()
     while True:
@@ -113,6 +110,5 @@ def menu():
             break
         else:
             print("Opção inválida")
-
 
 menu()
